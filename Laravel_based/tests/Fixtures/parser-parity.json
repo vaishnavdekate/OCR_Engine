@@ -1,0 +1,3019 @@
+{
+  "money": [
+    [
+      "1,234.56",
+      "1234.56"
+    ],
+    [
+      "1.234,56",
+      "1234.56"
+    ],
+    [
+      "1'234.50",
+      "1234.50"
+    ],
+    [
+      "1’234.50",
+      "1234.50"
+    ],
+    [
+      "1 234,50",
+      "1234.50"
+    ],
+    [
+      "-12.50",
+      "-12.50"
+    ],
+    [
+      "(12.50)",
+      "-12.50"
+    ],
+    [
+      "0,00",
+      "0.00"
+    ],
+    [
+      "12",
+      "12.00"
+    ],
+    [
+      "1234567890.00",
+      null
+    ],
+    [
+      "NaN",
+      null
+    ],
+    [
+      "hello",
+      null
+    ],
+    [
+      "16.5",
+      "16.50"
+    ],
+    [
+      "16,5",
+      "16.50"
+    ],
+    [
+      "1,234.5",
+      "1234.50"
+    ]
+  ],
+  "receipts": [
+    {
+      "lines": [
+        {
+          "text": "Grand Total: USD 55.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "55.00",
+          "currency": "USD"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Grand Total: USD 55.00",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "55.00",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 93.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Grand Total: USD 55.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Grand Total: USD 55.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Grand Total: USD 55.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total : CHF 54.50",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "54.50",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total : CHF 54.50",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "54.50",
+            "currency": "CHF",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total : CHF 54.50",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total : CHF 54.50",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total : CHF 54.50",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "TOTAL EUR 1.234,56",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "1234.56",
+          "currency": "EUR"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "TOTAL EUR 1.234,56",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "1234.56",
+            "currency": "EUR",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "TOTAL EUR 1.234,56",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "TOTAL EUR 1.234,56",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "TOTAL EUR 1.234,56",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Amount Due GBP 25",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "25.00",
+          "currency": "GBP"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Amount Due GBP 25",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "25.00",
+            "currency": "GBP",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 93.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Amount Due GBP 25",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Amount Due GBP 25",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Amount Due GBP 25",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Net à payer € 123,45",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "123.45",
+          "currency": "EUR"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Net à payer € 123,45",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "123.45",
+            "currency": "EUR",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Net à payer € 123,45",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Net à payer € 123,45",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Net à payer € 123,45",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Gesamtbetrag CHF 1'234.50",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "1234.50",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Gesamtbetrag CHF 1'234.50",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "1234.50",
+            "currency": "CHF",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Gesamtbetrag CHF 1'234.50",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Gesamtbetrag CHF 1'234.50",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Gesamtbetrag CHF 1'234.50",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Summe CHF 12.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "12.00",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Summe CHF 12.00",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "12.00",
+            "currency": "CHF",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Summe CHF 12.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Summe CHF 12.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Summe CHF 12.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total INR 200.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "200.00",
+          "currency": "INR"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total INR 200.00",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "200.00",
+            "currency": "INR",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total INR 200.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total INR 200.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total INR 200.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total USD -12.50",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "-12.50",
+          "currency": "USD"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total USD -12.50",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "-12.50",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total USD -12.50",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total USD -12.50",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total USD -12.50",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total USD (12.50)",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "-12.50",
+          "currency": "USD"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total USD (12.50)",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "-12.50",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total USD (12.50)",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total USD (12.50)",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total USD (12.50)",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total USD 55.OO",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "needs_review",
+        "total": {
+          "amount": "55.00",
+          "currency": "USD"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total USD 55.OO",
+        "confidence": 0.75,
+        "needs_review": true,
+        "warnings": [
+          "Ambiguous characters in the total were repaired. Confirm the printed digits."
+        ],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "55.00",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total USD 55.OO",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Ambiguous OCR glyphs were repaired within a decimal amount.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total USD 55.OO",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total USD 55.OO",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total CHF54.50",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "54.50",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total CHF54.50",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "54.50",
+            "currency": "CHF",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total CHF54.50",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total CHF54.50",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total CHF54.50",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total 54.50CHF",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "54.50",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total 54.50CHF",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "54.50",
+            "currency": "CHF",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total 54.50CHF",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total 54.50CHF",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total 54.50CHF",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total JPY 1,234",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "1234.00",
+          "currency": "JPY"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total JPY 1,234",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "1234.00",
+            "currency": "JPY",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total JPY 1,234",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total JPY 1,234",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total JPY 1,234",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total EUR 1.234",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "1234.00",
+          "currency": "EUR"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total EUR 1.234",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "1234.00",
+            "currency": "EUR",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total EUR 1.234",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total EUR 1.234",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total EUR 1.234",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total 16.5",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "needs_review",
+        "total": {
+          "amount": "16.50",
+          "currency": null
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total 16.5",
+        "confidence": 0.74,
+        "needs_review": true,
+        "warnings": [
+          "Currency is ambiguous or absent. Select the receipt currency."
+        ],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "16.50",
+            "currency": null,
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total 16.5",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total 16.5",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total 16.5",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total EUR 16,5",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "16.50",
+          "currency": "EUR"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total EUR 16,5",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "16.50",
+            "currency": "EUR",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total EUR 16,5",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total EUR 16,5",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          }
+        ],
+        "raw_text": "Total EUR 16,5",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Shop",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Subtotal USD 100.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "Tax USD 7.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        },
+        {
+          "text": "Tip USD 10.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            105.0,
+            500.0,
+            130.0
+          ]
+        },
+        {
+          "text": "Total USD 117.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            140.0,
+            500.0,
+            165.0
+          ]
+        },
+        {
+          "text": "Cash USD 200.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            175.0,
+            500.0,
+            200.0
+          ]
+        },
+        {
+          "text": "Change USD 83.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            210.0,
+            500.0,
+            235.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "117.00",
+          "currency": "USD"
+        },
+        "subtotal": {
+          "amount": "100.00",
+          "currency": "USD"
+        },
+        "tax": {
+          "amount": "7.00",
+          "currency": "USD"
+        },
+        "tip": {
+          "amount": "10.00",
+          "currency": "USD"
+        },
+        "merchant": "Shop",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {
+          "subtotal_plus_tax_and_tip": "117.00",
+          "arithmetic": "matched"
+        },
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "117.00",
+            "currency": "USD",
+            "id": "r4-a0",
+            "role": "total",
+            "score": 89.24,
+            "ocr_confidence": 0.98,
+            "source_text": "Total USD 117.00",
+            "box": [
+              10.0,
+              140.0,
+              500.0,
+              165.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "200.00",
+            "currency": "USD",
+            "id": "r5-a0",
+            "role": "payment",
+            "score": 35.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Cash USD 200.00",
+            "box": [
+              10.0,
+              175.0,
+              500.0,
+              200.0
+            ],
+            "reasons": [
+              "Classified as payment from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "100.00",
+            "currency": "USD",
+            "id": "r1-a0",
+            "role": "subtotal",
+            "score": 27.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Subtotal USD 100.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as subtotal from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "7.00",
+            "currency": "USD",
+            "id": "r2-a0",
+            "role": "tax",
+            "score": 19.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Tax USD 7.00",
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ],
+            "reasons": [
+              "Classified as tax from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "10.00",
+            "currency": "USD",
+            "id": "r3-a0",
+            "role": "tip",
+            "score": 17.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Tip USD 10.00",
+            "box": [
+              10.0,
+              105.0,
+              500.0,
+              130.0
+            ],
+            "reasons": [
+              "Classified as tip from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "83.00",
+            "currency": "USD",
+            "id": "r6-a0",
+            "role": "change",
+            "score": -12.16,
+            "ocr_confidence": 0.98,
+            "source_text": "Change USD 83.00",
+            "box": [
+              10.0,
+              210.0,
+              500.0,
+              235.0
+            ],
+            "reasons": [
+              "Classified as change from the receipt row."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Shop",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Subtotal USD 100.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "Tax USD 7.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          },
+          {
+            "text": "Tip USD 10.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              105.0,
+              500.0,
+              130.0
+            ]
+          },
+          {
+            "text": "Total USD 117.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              140.0,
+              500.0,
+              165.0
+            ]
+          },
+          {
+            "text": "Cash USD 200.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              175.0,
+              500.0,
+              200.0
+            ]
+          },
+          {
+            "text": "Change USD 83.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              210.0,
+              500.0,
+              235.0
+            ]
+          }
+        ],
+        "raw_text": "Shop\nSubtotal USD 100.00\nTax USD 7.00\nTip USD 10.00\nTotal USD 117.00\nCash USD 200.00\nChange USD 83.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total CHF 54.50",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Incl. 7.6% MwSt 54.50 CHF: 3.85",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "Entspricht in Euro 36.33 EUR",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "54.50",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": {
+          "amount": "3.85",
+          "currency": "CHF"
+        },
+        "tip": null,
+        "merchant": "Total CHF 54.50",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "54.50",
+            "currency": "CHF",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total CHF 54.50",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "3.85",
+            "currency": "CHF",
+            "id": "r1-a1",
+            "role": "tax",
+            "score": 19.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Incl. 7.6% MwSt 54.50 CHF: 3.85",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as tax from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "54.50",
+            "currency": "CHF",
+            "id": "r1-a0",
+            "role": "tax_base",
+            "score": 2.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Incl. 7.6% MwSt 54.50 CHF: 3.85",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as tax_base from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "36.33",
+            "currency": "EUR",
+            "id": "r2-a0",
+            "role": "exchange",
+            "score": -12.16,
+            "ocr_confidence": 0.98,
+            "source_text": "Entspricht in Euro 36.33 EUR",
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ],
+            "reasons": [
+              "Classified as exchange from the receipt row."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total CHF 54.50",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Incl. 7.6% MwSt 54.50 CHF: 3.85",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "Entspricht in Euro 36.33 EUR",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          }
+        ],
+        "raw_text": "Total CHF 54.50\nIncl. 7.6% MwSt 54.50 CHF: 3.85\nEntspricht in Euro 36.33 EUR",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Shop",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Total $20.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        }
+      ],
+      "hint": "CAD",
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "20.00",
+          "currency": "CAD"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Shop",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "20.00",
+            "currency": "CAD",
+            "id": "r1-a0",
+            "role": "total",
+            "score": 88.19,
+            "ocr_confidence": 0.98,
+            "source_text": "Total $20.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Shop",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Total $20.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          }
+        ],
+        "raw_text": "Shop\nTotal $20.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total USD 100.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Grand Total USD 120.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "needs_review",
+        "total": {
+          "amount": "120.00",
+          "currency": "USD"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total USD 100.00",
+        "confidence": 0.64,
+        "needs_review": true,
+        "warnings": [
+          "Conflicting printed totals were found; confirm the payable amount."
+        ],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "120.00",
+            "currency": "USD",
+            "id": "r1-a0",
+            "role": "total",
+            "score": 94.19,
+            "ocr_confidence": 0.98,
+            "source_text": "Grand Total USD 120.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "100.00",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "total",
+            "score": 87.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total USD 100.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total USD 100.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Grand Total USD 120.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          }
+        ],
+        "raw_text": "Total USD 100.00\nGrand Total USD 120.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Coffee 4.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Cash USD 50.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "Change USD 46.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "no_total",
+        "total": null,
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Coffee 4.00",
+        "confidence": 0.0,
+        "needs_review": true,
+        "warnings": [
+          "No explicit total could be read. Candidate amounts require human review."
+        ],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "50.00",
+            "currency": "USD",
+            "id": "r1-a0",
+            "role": "payment",
+            "score": 35.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Cash USD 50.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as payment from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "4.00",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "amount",
+            "score": 15.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Coffee 4.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as amount from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "46.00",
+            "currency": "USD",
+            "id": "r2-a0",
+            "role": "change",
+            "score": -12.16,
+            "ocr_confidence": 0.98,
+            "source_text": "Change USD 46.00",
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ],
+            "reasons": [
+              "Classified as change from the receipt row."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Coffee 4.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Cash USD 50.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "Change USD 46.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          }
+        ],
+        "raw_text": "Coffee 4.00\nCash USD 50.00\nChange USD 46.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Subtotal INR 100.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "CGST INR 5.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "SGST INR 5.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        },
+        {
+          "text": "Total INR 110.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            105.0,
+            500.0,
+            130.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "110.00",
+          "currency": "INR"
+        },
+        "subtotal": {
+          "amount": "100.00",
+          "currency": "INR"
+        },
+        "tax": {
+          "amount": "10.00",
+          "currency": "INR"
+        },
+        "tip": null,
+        "merchant": "Subtotal INR 100.00",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {
+          "subtotal_plus_tax_and_tip": "110.00",
+          "arithmetic": "matched"
+        },
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "110.00",
+            "currency": "INR",
+            "id": "r3-a0",
+            "role": "total",
+            "score": 88.89,
+            "ocr_confidence": 0.98,
+            "source_text": "Total INR 110.00",
+            "box": [
+              10.0,
+              105.0,
+              500.0,
+              130.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "100.00",
+            "currency": "INR",
+            "id": "r0-a0",
+            "role": "subtotal",
+            "score": 27.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Subtotal INR 100.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as subtotal from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "5.00",
+            "currency": "INR",
+            "id": "r1-a0",
+            "role": "tax",
+            "score": 19.84,
+            "ocr_confidence": 0.98,
+            "source_text": "CGST INR 5.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as tax from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "5.00",
+            "currency": "INR",
+            "id": "r2-a0",
+            "role": "tax",
+            "score": 19.84,
+            "ocr_confidence": 0.98,
+            "source_text": "SGST INR 5.00",
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ],
+            "reasons": [
+              "Classified as tax from the receipt row."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Subtotal INR 100.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "CGST INR 5.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "SGST INR 5.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          },
+          {
+            "text": "Total INR 110.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              105.0,
+              500.0,
+              130.0
+            ]
+          }
+        ],
+        "raw_text": "Subtotal INR 100.00\nCGST INR 5.00\nSGST INR 5.00\nTotal INR 110.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Total savings USD 25.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Total items 5",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "no_total",
+        "total": null,
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Total savings USD 25.00",
+        "confidence": 0.0,
+        "needs_review": true,
+        "warnings": [
+          "No explicit total could be read. Candidate amounts require human review."
+        ],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "25.00",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "discount",
+            "score": 15.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Total savings USD 25.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as discount from the receipt row."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Total savings USD 25.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Total items 5",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          }
+        ],
+        "raw_text": "Total savings USD 25.00\nTotal items 5",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "30.07.2007/13:29:17",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Tel.: 033.85.67.16",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "Account 1234.56",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        },
+        {
+          "text": "Tax 7.60%",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            105.0,
+            500.0,
+            130.0
+          ]
+        },
+        {
+          "text": "Receipt # 1234.56",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            140.0,
+            500.0,
+            165.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "no_total",
+        "total": null,
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Tax 7.60%",
+        "confidence": 0.0,
+        "needs_review": true,
+        "warnings": [
+          "No explicit total could be read. Candidate amounts require human review."
+        ],
+        "checks": {},
+        "line_items": [],
+        "candidates": [],
+        "lines": [
+          {
+            "text": "30.07.2007/13:29:17",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Tel.: 033.85.67.16",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "Account 1234.56",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          },
+          {
+            "text": "Tax 7.60%",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              105.0,
+              500.0,
+              130.0
+            ]
+          },
+          {
+            "text": "Receipt # 1234.56",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              140.0,
+              500.0,
+              165.0
+            ]
+          }
+        ],
+        "raw_text": "30.07.2007/13:29:17\nTel.: 033.85.67.16\nAccount 1234.56\nTax 7.60%\nReceipt # 1234.56",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Subtotal USD 100.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "Tax USD 7.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "Total USD 109.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "needs_review",
+        "total": {
+          "amount": "109.00",
+          "currency": "USD"
+        },
+        "subtotal": {
+          "amount": "100.00",
+          "currency": "USD"
+        },
+        "tax": {
+          "amount": "7.00",
+          "currency": "USD"
+        },
+        "tip": null,
+        "merchant": "Subtotal USD 100.00",
+        "confidence": 0.7,
+        "needs_review": true,
+        "warnings": [
+          "Subtotal + tax + tip does not match the total; review discounts or other charges."
+        ],
+        "checks": {
+          "subtotal_plus_tax_and_tip": "107.00",
+          "arithmetic": "mismatch"
+        },
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "109.00",
+            "currency": "USD",
+            "id": "r2-a0",
+            "role": "total",
+            "score": 88.54,
+            "ocr_confidence": 0.98,
+            "source_text": "Total USD 109.00",
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "100.00",
+            "currency": "USD",
+            "id": "r0-a0",
+            "role": "subtotal",
+            "score": 27.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Subtotal USD 100.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as subtotal from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "7.00",
+            "currency": "USD",
+            "id": "r1-a0",
+            "role": "tax",
+            "score": 19.84,
+            "ocr_confidence": 0.98,
+            "source_text": "Tax USD 7.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as tax from the receipt row."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Subtotal USD 100.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "Tax USD 7.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "Total USD 109.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          }
+        ],
+        "raw_text": "Subtotal USD 100.00\nTax USD 7.00\nTotal USD 109.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "Shop",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "TOTAL",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "CHF 9.50",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "9.50",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "Shop",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {},
+        "line_items": [],
+        "candidates": [
+          {
+            "amount": "9.50",
+            "currency": "CHF",
+            "id": "r2-a0",
+            "role": "total",
+            "score": 88.54,
+            "ocr_confidence": 0.98,
+            "source_text": "CHF 9.50",
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "Shop",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "TOTAL",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "CHF 9.50",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          }
+        ],
+        "raw_text": "Shop\nTOTAL\nCHF 9.50",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "2xCoffee à 4.50 CHF 9.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            0.0,
+            500.0,
+            25.0
+          ]
+        },
+        {
+          "text": "1xCake à 5.00 CHF 5.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            35.0,
+            500.0,
+            60.0
+          ]
+        },
+        {
+          "text": "Total CHF 14.00",
+          "confidence": 0.98,
+          "box": [
+            10.0,
+            70.0,
+            500.0,
+            95.0
+          ]
+        }
+      ],
+      "hint": null,
+      "expected": {
+        "page": 1,
+        "status": "ok",
+        "total": {
+          "amount": "14.00",
+          "currency": "CHF"
+        },
+        "subtotal": null,
+        "tax": null,
+        "tip": null,
+        "merchant": "2xCoffee à 4.50 CHF 9.00",
+        "confidence": 0.945,
+        "needs_review": false,
+        "warnings": [],
+        "checks": {
+          "line_item_sum": "14.00",
+          "line_items_match_total": "true"
+        },
+        "line_items": [
+          {
+            "description": "Coffee",
+            "quantity": "2",
+            "unit_price": "4.50",
+            "amount": "9.00",
+            "currency": "CHF",
+            "source_text": "2xCoffee à 4.50 CHF 9.00"
+          },
+          {
+            "description": "Cake",
+            "quantity": "1",
+            "unit_price": "5.00",
+            "amount": "5.00",
+            "currency": "CHF",
+            "source_text": "1xCake à 5.00 CHF 5.00"
+          }
+        ],
+        "candidates": [
+          {
+            "amount": "14.00",
+            "currency": "CHF",
+            "id": "r2-a0",
+            "role": "total",
+            "score": 88.54,
+            "ocr_confidence": 0.98,
+            "source_text": "Total CHF 14.00",
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ],
+            "reasons": [
+              "Classified as total from the receipt row.",
+              "Explicit payable-total label."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "4.50",
+            "currency": "CHF",
+            "id": "r0-a0",
+            "role": "amount",
+            "score": 15.84,
+            "ocr_confidence": 0.98,
+            "source_text": "2xCoffee à 4.50 CHF 9.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as amount from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "9.00",
+            "currency": "CHF",
+            "id": "r0-a1",
+            "role": "amount",
+            "score": 15.84,
+            "ocr_confidence": 0.98,
+            "source_text": "2xCoffee à 4.50 CHF 9.00",
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ],
+            "reasons": [
+              "Classified as amount from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "5.00",
+            "currency": "CHF",
+            "id": "r1-a0",
+            "role": "amount",
+            "score": 15.84,
+            "ocr_confidence": 0.98,
+            "source_text": "1xCake à 5.00 CHF 5.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as amount from the receipt row."
+            ],
+            "observations": 1
+          },
+          {
+            "amount": "5.00",
+            "currency": "CHF",
+            "id": "r1-a1",
+            "role": "amount",
+            "score": 15.84,
+            "ocr_confidence": 0.98,
+            "source_text": "1xCake à 5.00 CHF 5.00",
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ],
+            "reasons": [
+              "Classified as amount from the receipt row."
+            ],
+            "observations": 1
+          }
+        ],
+        "lines": [
+          {
+            "text": "2xCoffee à 4.50 CHF 9.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              0.0,
+              500.0,
+              25.0
+            ]
+          },
+          {
+            "text": "1xCake à 5.00 CHF 5.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              35.0,
+              500.0,
+              60.0
+            ]
+          },
+          {
+            "text": "Total CHF 14.00",
+            "confidence": 0.98,
+            "box": [
+              10.0,
+              70.0,
+              500.0,
+              95.0
+            ]
+          }
+        ],
+        "raw_text": "2xCoffee à 4.50 CHF 9.00\n1xCake à 5.00 CHF 5.00\nTotal CHF 14.00",
+        "rotation": 0,
+        "passes": 0,
+        "width": 600,
+        "height": 500,
+        "preview": null
+      }
+    }
+  ]
+}

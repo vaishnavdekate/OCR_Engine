@@ -1,0 +1,40 @@
+# Local environments and dependency installations
+.venv/
+venv/
+vendor/
+node_modules/
+*.egg-info/
+
+# Private environment files; keep the setup template
+.env*
+!.env.example
+auth.json
+*.pem
+*.key
+
+# Generated build output, runtime files, and local reports/archives
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.phpunit.cache/
+.phpunit.result.cache
+build/
+dist/
+artifacts/
+*.log
+/Laravel_based/native/build/
+/Laravel_based/bootstrap/cache/*
+!/Laravel_based/bootstrap/cache/.gitignore
+/Laravel_based/storage/app/ocr-tmp/
+/Laravel_based/storage/app/receipt.lock
+/Laravel_based/storage/framework/views/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

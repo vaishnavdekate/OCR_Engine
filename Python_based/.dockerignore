@@ -1,0 +1,5 @@
+*
+!pyproject.toml
+!receipt_ocr/
+!receipt_ocr/**
+**/__pycache__

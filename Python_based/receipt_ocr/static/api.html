@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Receipt Lens · API reference</title><link rel="stylesheet" href="/static/styles.css"></head>
+<body><header class="topbar"><a class="brand" href="/"><span class="brand-mark">▤</span>Receipt<span class="brand-light">Lens</span></a><span class="workspace-label">API REFERENCE</span></header>
+<article class="api-doc"><div class="eyebrow">LOCAL SERVICE · VERSION 1</div><h1>Receipt extraction API</h1><p>Upload a document and receive exact decimal amounts, source rows, review warnings, and per-page results. <a href="/openapi.json">Download the OpenAPI schema</a>.</p>
+<h2>POST /api/receipts</h2><p>Send a multipart form with a required <code>file</code>, optional three-letter <code>currency</code> hint, and <code>preview</code> boolean (default true). The hint resolves missing or ambiguous currency symbols; an explicit printed currency takes priority.</p>
+<pre>curl -X POST http://127.0.0.1:8765/api/receipts \
+  -F 'file=@/absolute/path/receipt.jpg' \
+  -F 'preview=false'</pre>
+<p>If the server has <code>RECEIPT_API_TOKEN</code> configured, include <code>Authorization: Bearer YOUR_TOKEN</code>. Keep the service on localhost, or use authenticated HTTPS when connecting it to another application.</p>
+<h2>Response</h2><pre>{
+  "filename": "receipt.jpg",
+  "sha256": "...",
+  "engine": "RapidOCR ...",
+  "processing_ms": 4800,
+  "pages": [{
+    "page": 1,
+    "status": "ok",
+    "total": {"amount": "54.50", "currency": "CHF"},
+    "tax": {"amount": "3.85", "currency": "CHF"},
+    "needs_review": false,
+    "confidence": 0.97,
+    "warnings": [],
+    "checks": {"preprocessing_consensus": "matched"},
+    "candidates": [], "lines": [], "raw_text": "..."
+  }]
+}</pre>
+<p>The example is abbreviated. Actual responses include all readable candidates and text. Amounts are decimal strings. <code>confidence</code> is a heuristic evidence score, not a calibrated probability. The two preprocessing passes use the same OCR model. <code>total: null</code> means the system abstained. Each PDF/TIFF page is independent; there is no automatic cross-page grand total.</p>
+<h2>Limits and errors</h2><ul><li>JPEG, PNG, WebP, TIFF, AVIF, PDF; 20 MiB per file, 25 megapixels per page, up to 5 pages.</li><li>401: missing or invalid token. 403: cross-origin upload blocked. 413: file or body too large.</li><li>422: invalid document, missing file, or invalid currency hint. 500: OCR failed.</li><li>503: one document is already processing. Retry after the number of seconds in <code>Retry-After</code>.</li></ul>
+<h2>GET /api/health</h2><p>Returns service availability, engine description, busy status, and whether token authentication is enabled. Models load lazily on the first extraction.</p>
+<p><a href="/">Return to receipt workspace</a></p></article></body></html>

@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+if command -v magick >/dev/null 2>&1; then
+    exec magick "$@"
+fi
+if [ "${1:-}" = identify ]; then
+    shift
+    exec identify "$@"
+fi
+exec convert "$@"
